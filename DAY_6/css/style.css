@@ -118,7 +118,6 @@ a[href]:hover{
 
 .theme-01{
     text-align: center;
-    margin-top: 8.4rem;
 }
 
 .theme-02{
@@ -131,6 +130,9 @@ a[href]:hover{
     text-align: center;
     margin-bottom: 2.1rem;
 }
+
+
+
 
 .question{
     font-weight: 600;
@@ -149,4 +151,14 @@ a[href]:hover{
 .footer{
     margin-top: 6.3rem;
     margin-bottom: 6.3rem;
+}
+
+
+img {
+  vertical-align: bottom;
+  margin-bottom: 4.2rem;
+}
+
+.header{
+    margin-top: 84px;
 }
