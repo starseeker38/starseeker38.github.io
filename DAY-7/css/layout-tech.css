@@ -1,0 +1,89 @@
+/*:가상클래스 VS ::가상요소(pseudo Element)
+단락 선택시만 해당적용시, 앞에 p를 추가*/
+/*safari 까지 크로스 브라우징*/
+::-moz-selection{
+    background: #efd4c6;
+    color:#7b6d66;
+}
+
+::selection{
+    background: #efd4c6;
+    color:#7b6d66;
+}
+
+
+body{
+    margin: 0;
+}
+
+.wrapper{
+    /*width, height 속성은 inline요소에는 적용되지 않는다.*/
+    width:680px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+
+.inline-box, 
+.block-box { width: 200px;
+            height:200px;
+
+/*margin-top, margin-bottom은 inline 요소이는 적용되지 않습니다(간격이 벌어지지 않는다.)
+border / padding 속성도 마찬가지*/
+
+            background-color: #000;
+            color:#fff;
+
+
+
+}
+
+.inline-block-box{
+    /*기본적으로는 inline처럼 보이지만 block처럼 레이아웃 설정이 가능하다.
+    상/하 공간 설정 가능, width/height 설정 가능 
+    화면표시방법을 바꿔줍니다. 디자인을 위한 속성.*/
+    background:#25a04d;
+    color: #ffd219;
+    display: inline-block;
+}
+
+hr{
+    margin: 20px 0;
+    border:0;
+    border-bottom: 1px solid #c2d6d1;
+}
+
+.ghost-style-link{
+    display: inline-block;
+    margin: 20px;
+    border: 3px solid currentColor;
+    padding: 0.9375em 1.25em 0.625em;
+    font-style: 1rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3fb5c8;
+    transition: all 0.4s ease;  
+}
+
+.ghost-style-link:hover {
+    border-colod: #3fb5c8;
+    background: #3fb5c8;
+    color: :#fff;
+}
+
+.album-image{
+    /*width:100%;
+    height: auto;*/
+    margin: 5px;
+    border: 8px solid #cccccc;
+    padding: 20px;
+    background:  #fff;
+    transition: border-color 349ms;
+}
+
+.album-image:hover{
+    border-color: #474cc4;
+}

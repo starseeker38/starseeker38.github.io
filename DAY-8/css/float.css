@@ -1,0 +1,15 @@
+
+
+.dropcap{
+    line-height: 1.5;
+}
+
+/*.dropcap .dropcap__first-child{*/
+.dropcap::first-letter{
+    float: left;
+    margin-right:10px;
+    color: red;
+    font-size: 40px;
+    font-weight: 900;
+    
+}

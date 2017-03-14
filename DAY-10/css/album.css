@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle,#7b7b7b,#313131)
+}
+
+.album{position: absolute;
+        width: 300px;
+        height: 300px;
+        top:0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;}
+.album * {position: absolute;}
+.album__disk{
+    left: 58px;
+}
+
+.album__disk.is-rotate{
+    animation: rotate-disk 3s infinite;
+}
+
+@keyframes rotate-disk{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.album__cover{box-shadow: 0 4px 6px #333333;
+border-radius: 3px;}
+
+img.album__vinyl {
+    left: 253px;
+}

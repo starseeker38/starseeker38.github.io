@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    background: #111111;
+    height: 100vh;
+}
+
+
+.cartoon{
+    position: absolute;
+    margin: 0 auto;
+    width: 800px;
+    height: 320px;
+    top: 70px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+}
+.cartoon * {position: absolute;}
+
+/*.cartoon__bg{
+    border: 10px solid #fff
+}*/
+
+.cartoon__gorillas{
+    top: 54px;
+    right: 0px;
+    
+}
+
+.cartoon__kingkong{
+    
+    left: 20px;
+    bottom: 0;
+}
+
+.cartoon__waves{
+    left: 0;
+    bottom: 0;
+}
+
+.cartoon__logo{
+    top: 10px;
+    right: 10px;
+}
