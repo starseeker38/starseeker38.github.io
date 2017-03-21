@@ -2,18 +2,26 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>cartoon</title>
+    <title>CARTOON</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="cartoon">
         <img src="images/BG.jpg" alt="배경이미지" class="cartoon__bg">
         <img src="images/golliras.png" alt="고릴라들" class="cartoon__gorillas">
-        <img src="images/kingkong.png" alt="킹콩한마리" class="cartoon__kingkong">
+        <img src="images/kingkong.png" alt="킹콩한마리" class="cartoon__kingkong ">
         <img src="images/apes.png" alt="물결" class="cartoon__waves">
         <img src="images/sn-logo.png" alt="로고" class="cartoon__logo">
     </div>
 
     
 </body>
+
+
+<script>
+    var wrap = document.querySelector('.cartoon');
+    wrap.onclick = function() {
+        this.classList.toggle('fin');
+    };
+</script>
 </html>

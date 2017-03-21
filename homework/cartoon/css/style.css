@@ -14,6 +14,7 @@ body{
     right: 0;
     left: 0;
     bottom: 0;
+    overflow: hidden;
 
 }
 .cartoon * {position: absolute;}
@@ -24,22 +25,62 @@ body{
 
 .cartoon__gorillas{
     top: 54px;
-    right: 0px;
+    right: -500px;
+    transition: right 0.3s ease-out 0.6s;
     
 }
 
 .cartoon__kingkong{
     
-    left: 20px;
+    left: -300px;
     bottom: 0;
+    transition: left 0.45s ease-out 0.2s;
 }
 
 .cartoon__waves{
     left: 0;
-    bottom: 0;
+    bottom: -500px;
+    transition: bottom 0.7s ease-out 0.6s;
 }
 
 .cartoon__logo{
     top: 10px;
     right: 10px;
+    opacity: 0;
+    transition: all 0.7s ease-out;
+}
+
+.cartoon:hover .cartoon__kingkong{
+    left: 0;
+}
+
+.cartoon.fin .cartoon__kingkong{
+    left: 0;
+}
+
+.cartoon:hover .cartoon__gorillas{
+    right: 0;
+}
+
+.cartoon.fin .cartoon__gorillas{
+    right: 0;
+}
+
+
+.cartoon:hover .cartoon__waves{
+    bottom: 0;
+}
+
+.cartoon.fin .cartoon__waves{
+    bottom: 0;
+}
+
+
+
+.cartoon:hover .cartoon__logo{
+    opacity: 1;
+}
+
+.cartoon.fin .ccartoon__logo{
+    opacity: 1;
 }
